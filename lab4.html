@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link href="styles2.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Formularz Rejestracji</h1>
+    <form class="user-form">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" placeholder="Podaj swoje imię">
+
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" name="surname" placeholder="Podaj swoje nazwisko">
+
+        <label for="address">Adres:</label>
+        <input type="text" id="address" name="address" placeholder="Podaj swój adres">
+
+        <label for="housing">Mieszkanie/dom:</label>
+        <select id="housing" name="housing">
+            <option value="dom">Dom</option>
+            <option value="mieszkanie">Mieszkanie</option>
+        </select>
+
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Podaj numer telefonu">
+
+        <label for="dob">Data urodzenia:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="license">Czy posiada prawo jazdy:</label>
+        <select id="license" name="license">
+            <option value="tak">Tak</option>
+            <option value="nie">Nie</option>
+        </select>
+
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" placeholder="Ustaw hasło">
+
+        <label for="gender">Płeć:</label>
+        <select id="gender" name="gender">
+            <option value="kobieta">Kobieta</option>
+            <option value="mężczyzna">Mężczyzna</option>
+        </select>
+
+        <label for="city">Miasto:</label>
+        <input type="text" id="city" name="city" placeholder="Podaj swoje miasto">
+
+        <label for="country">Państwo:</label>
+        <input type="text" id="country" name="country" placeholder="Podaj swoje państwo">
+
+        <button type="submit">Zarejestruj się</button>
+    </form>
+</body>
+
+</html>
