@@ -105,42 +105,42 @@
             <button class="button" onclick="appendNumber('5')">5</button>
             <button class="button" onclick="appendNumber('6')">6</button>
 
+            <button class="button" onclick="appendNumber('.')">.</button>
             <button class="button" onclick="appendNumber('1')">1</button>
             <button class="button" onclick="appendNumber('2')">2</button>
-            <button class="button" onclick="appendNumber('3')">3</button>
 
+            <button class="button" onclick="appendNumber('3')">3</button>
             <button class="button" onclick="appendNumber('0')">0</button>
-            <button class="button" onclick="appendNumber('.')">.</button>
             <button class="button equal" onclick="calculate()">=</button>
         </div>
     </div>
 
     <script>
-    const display = document.getElementById('display');
+        const display = document.getElementById('display');
 
-    function appendNumber(number) {
-        if (display.innerText === '0') {
-            display.innerText = number;
-        } else {
-            display.innerText += number;
+        function appendNumber(number) {
+            if (display.innerText === '0') {
+                display.innerText = number;
+            } else {
+                display.innerText += number;
+            }
         }
-    }
 
-    function appendOperator(operator) {
-        display.innerText += operator;
-    }
-
-    function clearDisplay() {
-        display.innerText = '0';
-    }
-
-    function calculate() {
-        try {
-            display.innerText = eval(display.innerText);
-        } catch (error) {
-            display.innerText = 'Error';
+        function appendOperator(operator) {
+            display.innerText += operator;
         }
-    }
+
+        function clearDisplay() {
+            display.innerText = '0';
+        }
+
+        function calculate() {
+            try {
+                display.innerText = eval(display.innerText);
+            } catch (error) {
+                display.innerText = 'Error';
+            }
+        }
     </script>
 
 </body>
