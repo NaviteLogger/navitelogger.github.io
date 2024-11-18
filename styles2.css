@@ -101,3 +101,19 @@ h1 {
     font-weight: bold;
     color: #555;
 }
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+input:invalid,
+select:invalid {
+    border-color: red;
+}
